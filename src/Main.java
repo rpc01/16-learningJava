@@ -21,6 +21,18 @@ public class Main {
         System.out.println(myCar.paintColor.toString());
         myCar.changePaintColor(Color.RED);
         System.out.println(myCar.paintColor.toString());
-
+        
+/*work with strings*/        
+        
+       	String userInput ="entertainment";
+       	String upperCased =userInput.toUpperCase();
+       	System.out.println("Userinput: "+userInput);
+       	System.out.println("Uppercased: "+upperCased);
+       	
+       	char firstChar = userInput.charAt(2);
+       	System.out.println(firstChar);
+       	
+       	System.out.println(userInput.contains("EN"));
+       	System.out.println("Contains enter?: "+ userInput.contains("EN".toLowerCase()));
+        }
     }
-}
