@@ -1,38 +1,35 @@
 import java.awt.*;
+import java.util.Scanner;
+import java.lang.reflect.Array;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("Kathryn");
 
-        Car myCar = new Car(25.5,
+
+
+//work with functions
+       	Car myCar = new Car(25.5,
                 "1BC32E",
-                Color.BLUE, true);
+                Color.BLUE,
+                true, 
+                50);
 
         Car sallyCar = new Car(13.9,
                 "3D2OBN",
                 Color.BLACK,
-                false);
-
-        System.out.println("My Car's License Plate: " + myCar.licensePlate);
-        System.out.println("Sally's License Plate: " + sallyCar.licensePlate);
-
-        System.out.println(myCar.paintColor.toString());
-        myCar.changePaintColor(Color.RED);
-        System.out.println(myCar.paintColor.toString());
+                false,
+                100);
         
-/*work with strings*/        
-        
-       	String userInput ="entertainment";
-       	String upperCased =userInput.toUpperCase();
-       	System.out.println("Userinput: "+userInput);
-       	System.out.println("Uppercased: "+upperCased);
+       	double speed = 0;
+ 		speed=myCar.speedingUp(speed);
+ 		System.out.println(speed);
        	
-       	char firstChar = userInput.charAt(2);
-       	System.out.println(firstChar);
-       	
-       	System.out.println(userInput.contains("EN"));
-       	System.out.println("Contains enter?: "+ userInput.contains("EN".toLowerCase()));
+ 		System.out.println(myCar.licensePlate);
+ 		
+ 	   			
+ 		
         }
     }
+
+

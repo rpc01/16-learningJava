@@ -13,19 +13,26 @@ public class Car {
     String licensePlate;
     Color paintColor;
     boolean areTailingWorking;
-
+    
     public Car(double inputAverageMPG,
                String inputLicensePlate,
                Color inputPaintColor,
-               boolean inputAreTaillightsWorking) {
+               boolean inputAreTaillightsWorking,
+               double inputSpeed) {
         this.averageMilesPerGallon = inputAverageMPG;
         this.licensePlate = inputLicensePlate;
         this.paintColor = inputPaintColor;
         this.areTailingWorking = inputAreTaillightsWorking;
-    }
+        }
 
     public void changePaintColor(Color newPaintColor) {
         this.paintColor = newPaintColor;
     }
-
+    
+    public double speedingUp(double speed) {
+    	speed += 100;
+    	return speed;
+    }
+    
+    
 }

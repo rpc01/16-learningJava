@@ -1,0 +1,59 @@
+import java.awt.Color;
+import java.lang.reflect.Array;
+import java.util.Scanner;
+
+public class examplesOfCode {
+    System.out.println("Hello World");
+    System.out.println("Kathryn");
+
+    Car myCar = new Car(25.5,
+            "1BC32E",
+            Color.BLUE, true);
+
+    Car sallyCar = new Car(13.9,
+            "3D2OBN",
+            Color.BLACK,
+            false);
+
+    System.out.println("My Car's License Plate: " + myCar.licensePlate);
+    System.out.println("Sally's License Plate: " + sallyCar.licensePlate);
+
+    System.out.println(myCar.paintColor.toString());
+    myCar.changePaintColor(Color.RED);
+    System.out.println(myCar.paintColor.toString());
+
+/*work with strings*/
+
+   	String userInput ="entertainment";
+   	String upperCased =userInput.toUpperCase();
+   	System.out.println("Userinput: "+userInput);
+   	System.out.println("Uppercased: "+upperCased);
+
+   	char firstChar = userInput.charAt(2);
+   	System.out.println(firstChar);
+
+   	System.out.println(userInput.contains("EN"));
+   	System.out.println("Contains enter?: "+ userInput.contains("EN".toLowerCase()));
+   	
+   	String s ="dog";
+   	String s_f = s.replace("d","F");
+   	System.out.println(s_f);
+   	
+
+/*work with scanner*/
+   	Scanner sc = new Scanner(System.in);
+   	System.out.println("Enter a  word or two: ");
+   	String scanned=sc.nextLine();
+   	System.out.println(scanned.toUpperCase());
+   	sc.close();
+
+ // work with arrays
+	int[] arrayNumbers= {1,2,3,200};
+	System.out.println(arrayNumbers[1]);
+   	String[] palabras = {"hola","23","45","723"};
+   	System.out.println(palabras[0]);
+
+   	System.out.println(Array.get(arrayNumbers, 2));
+
+
+}
